@@ -1,0 +1,143 @@
+/* ----------------------------------------------------------- */
+/* ------------------------- BASIC SETUP ----------------------*/
+/* ----------------------------------------------------------- */
+:root {
+    /* Primary */
+    --pink: hsl(322, 100%, 66%);
+
+    /* Neutral */
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan: hsl(192, 100%, 9%);
+    --gray-blue: hsl(208, 11%, 55%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------- */
+/* -------------------- REUSABLE COMPONENTS  ------------------*/
+/* ----------------------------------------------------------- */
+
+/*-------- Headings --------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+section {
+    margin-bottom: 150px;
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------- HERO  ------------------------*/
+/* ----------------------------------------------------------- */
+main:first-child {
+
+}
+.hero {
+    padding: 60px;
+    background: url(../images/bg-hero-desktop.svg) no-repeat center center / cover, var(--pale-cyan);
+}
+
+.hero-bg {
+    width: 85%;
+    margin-left: 12%;
+}
+
+.hero-title {
+    font-size: 200%;
+    width: 400px;
+}
+
+.hero-info {
+    width: 78%;
+    margin: 25px 0;
+}
+
+/* ----------------------------------------------------------- */
+/* ---------------------------- CARDS  ------------------------*/
+/* ----------------------------------------------------------- */
+
+
+.card {
+    height: 400px;
+    width: 1300px;
+    box-shadow: 0 2px 20px -5px #9b9b9b59;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    padding: 15px 5px 20px 50px;
+    text-align: left;
+    position: relative;
+}
+
+.card img {
+    height: 320px;
+    padding: 0;
+    position: absolute;
+    top: 8%;
+    right: 4%;
+}
+
+.card-info {
+    width: 500px;
+    margin-left: 80px;
+}
+
+.card-info h2 {
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    color: var(--gray-blue);
+}
+
+
+/* ----------------------------------------------------------- */
+/* ---------------------------- GRID --------------------------*/
+/* ----------------------------------------------------------- */
+
+.wrapper > section > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+    header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* -------- PARAGRAPHS---------- */
+
+/* -------- ICONS---------- */
+
+/* -------- LINKS---------- */
+
+/* -------- BUTTONS---------- */
+.cta-btn {
+    background-color: #fff;
+    width: 250px;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
