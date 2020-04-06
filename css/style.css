@@ -41,7 +41,26 @@ h6 {
 }
 
 section {
-    margin-bottom: 150px;
+    margin-bottom: 120px;
+}
+
+/* -------- PARAGRAPHS---------- */
+
+/* -------- ICONS---------- */
+
+/* -------- LINKS---------- */
+
+/* -------- BUTTONS---------- */
+
+.btn {
+    background-color: var(--pink);
+    width: 44%;
+    padding: 18px 40px;
+    text-align: center;
+    border-radius: 100px;
+    color: white;
+    font-size: 70%;
+    font-weight: 700;
 }
 
 /* ----------------------------------------------------------- */
@@ -51,13 +70,12 @@ main:first-child {
 
 }
 .hero {
-    padding: 60px;
+    padding: 60px 100px;
     background: url(../images/bg-hero-desktop.svg) no-repeat center center / cover, var(--pale-cyan);
 }
 
 .hero-bg {
-    width: 85%;
-    margin-left: 12%;
+    width: 100%;
 }
 
 .hero-title {
@@ -66,14 +84,38 @@ main:first-child {
 }
 
 .hero-info {
-    width: 78%;
-    margin: 25px 0;
+    width: 84%;
+    margin: 25px 0 30px;
+    line-height: 145%;
+}
+
+/*---------- NAVBAR ----------*/
+.nav-brand img{
+    width: 25%;
+    vertical-align: bottom;
+    padding-top: 15px;
+}
+
+.cta-btn {
+    background-color: #fff;
+    width: 200px;
+    padding: 15px 50px;
+    text-align: center;
+    border-radius: 100px;
+    font-weight: 700;
+    box-shadow: 0 0 10px 1px #a0a0a062;
+    margin-left: 0;
+    justify-self: end;
+    font-size: 80%;
+
 }
 
 /* ----------------------------------------------------------- */
 /* ---------------------------- CARDS  ------------------------*/
 /* ----------------------------------------------------------- */
-
+#card-feature {
+    position: relative;
+}
 
 .card {
     height: 400px;
@@ -119,25 +161,77 @@ main:first-child {
     align-items: center;
 }
 
-    header {
+header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
 }
 
-/* -------- PARAGRAPHS---------- */
+/* ----------------------------------------------------------- */
+/* --------------------------- BANNER -------------------------*/
+/* ----------------------------------------------------------- */
 
-/* -------- ICONS---------- */
-
-/* -------- LINKS---------- */
-
-/* -------- BUTTONS---------- */
-.cta-btn {
-    background-color: #fff;
-    width: 250px;
-    padding: 15px 50px;
+.banner.card {
+    width: 45%;
+    height: 220px;
     text-align: center;
-    border-radius: 100px;
+    padding: 20px 50px;
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto -200px;
+
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.banner h1 {
+    font-size: 150%;
+    margin: 35px 0 20px;
+    display: inline-block;
+}
+
+.banner .btn {
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------- */
+/* --------------------------- FOOTER -------------------------*/
+/* ----------------------------------------------------------- */
+footer {
+    background-color: var(--dark-cyan);
+    padding: 150px 170px 0;
+    display: grid;
+    color: #8b8b8b;
+    grid-template-columns: 2fr 0.6fr 0.6fr 1.2fr;
+    grid-auto-flow: column;
+}
+
+footer .nav-brand-copy{
+    background-color: #fff;
+    mask: url(../images/logo.svg) no-repeat center;
+    -webkit-mask: url(../images/logo.svg) no-repeat center;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+footer p {
+    width: 60%;
+}
+
+.fas {
+    color: white;
+    margin-right: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--dark-cyan);
+    color: #ddd;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
