@@ -170,6 +170,10 @@ section {
     margin-left: 200px;
 }
 
+.floated-h2 {
+    margin-bottom: 10px;
+}
+
 .floated-info {
     width: 90%;
     color: #b0b0b0;
