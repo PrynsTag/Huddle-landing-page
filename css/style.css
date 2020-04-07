@@ -143,6 +143,10 @@ section {
     position: relative;
 }
 
+.card.left {
+    grid-template-areas: "left-position right-position";
+}
+
 .card img {
     height: 400px;
     padding: 0;
@@ -154,6 +158,20 @@ section {
 .card-info {
     width: 540px;
     margin-left: 100px;
+}
+
+.floated-conversation {
+    grid-area: left-position;
+    left: 10%;
+}
+
+.floated-container {
+    grid-area: right-position;
+    margin-left: 200px;
+}
+
+.floated-info {
+    width: 90%;
 }
 
 .card-info h2 {
@@ -203,9 +221,7 @@ header {
     display: inline-block;
 }
 
-.banner .btn {
-    margin: 0 auto;
-}
+.banner .btn { margin: 0 auto; }
 
 /* ----------------------------------------------------------- */
 /* --------------------------- FOOTER -------------------------*/
@@ -345,6 +361,15 @@ footer a:active {
         margin-left: 80px;
     }
 
+    .floated-container {
+        margin-left: 100px;
+        margin-right: 90px;
+    }
+
+    .floated-info {
+        width: 110%;
+    }
+
     footer { grid-template-columns: 2.5fr 0.9fr 1fr 1.4fr; }
 
     .copy-right { padding: 0 30px 30px; }
@@ -424,8 +449,31 @@ footer a:active {
         line-height: 150%;
     }
 
+    .card.left {
+        grid-template-areas: "left-position"
+                            "right-position";
+    }
+
     .card-info h2 {
         margin-bottom: 15px;
+    }
+
+    .floated-container {
+        margin: 0 0 20px;
+    }
+
+    .floated-h2 {
+        margin-bottom: 20px;
+    }
+
+    .floated-info {
+        width: 80%;
+        color: #b0b0b0;
+        margin: 0 auto;
+    }
+
+    img.floated-conversation {
+        padding-top: 20px;
     }
 
     .banner.card {
